@@ -10,7 +10,7 @@
 set disassemble-next-line on
 set disassembly-flavor att (或者intel) //熟悉INTEL汇编指令格式的，可以指定汇编代码格式
 ##gdb启动自加载断点
-1.DB使用中比较麻烦的事情，就是每次启动，还要手动敲一把命令，特别是断点比较多的情况，这个特便影响，工作效率。查了一下gdb info，gdb支持自动读取一个启动脚本文件.gdbinit，所以经常输入的启动命令，就都可以写在gdb启动目录的.gdbinit里面。比如
+1. DB使用中比较麻烦的事情，就是每次启动，还要手动敲一把命令，特别是断点比较多的情况，这个特便影响，工作效率。查了一下gdb info，gdb支持自动读取一个启动脚本文件.gdbinit，所以经常输入的启动命令，就都可以写在gdb启动目录的.gdbinit里面。比如
 .gdbinit:
   file myapp
   handle SIGPIPE nostop
